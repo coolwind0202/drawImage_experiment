@@ -1,1 +1,56 @@
-<div id="app"></div>
+<div id="app">
+  <section id="introduction">
+    <h1>drawImage() experiment</h1>
+    <p>
+      このページでは、<a
+        href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/drawImage"
+        ><code>drawImage</code></a
+      >の実行時間が、Chrome と Firefox
+      で異なる現象の原因を理解するための検証を行います。
+    </p>
+    <h3>参考リンク</h3>
+    <p>
+      この検証にあたっては、
+      <a
+        href="https://scrapbox.io/0202-animation/ctx.drawImage(video)%E3%81%8C%E3%81%AA%E3%81%9C%E9%87%8D%E3%81%8F%E3%81%AA%E3%82%8B%EF%BC%9F"
+        >Scrapbox上で考察を行いました</a
+      >
+      ので、併せてご覧ください。
+    </p>
+  </section>
+  <section id="content">
+    <ul>
+      <li>
+        <section class="experiment">
+          <h3>仮説1. drawImageそのものの実行時間がChromeとFirefoxで異なる。</h3>
+          <h4>詳細</h4>
+          <p>
+            <code>drawImage</code> に
+            <code>HTMLVideoElement</code>を渡すのが原因ではなく、
+            <code>drawImage</code
+            >そのものが速度低下の原因なのではないか、という考え。
+          </p>
+          <h4>実験方法</h4>
+          <p>
+            <a href="/experiments/01/index.html">このページ</a
+            >をChrome、Firefoxそれぞれで実行する。
+          </p>
+        </section>
+      </li>
+      <li>
+        <section class="experiment">
+          <h3>仮説2. drawImageそのものの実行時間がChromeとFirefoxで異なる。</h3>
+          <h4>詳細</h4>
+          <p>
+            <code>drawImage</code> に
+            <code>HTMLVideoElement</code>を渡すのが原因ではなく、
+            <code>drawImage</code
+            >そのものが速度低下の原因なのではないか、という考え。
+          </p>
+          <h4>実験方法</h4>
+          <p></p>
+        </section>
+      </li>
+    </ul>
+  </section>
+</div>
